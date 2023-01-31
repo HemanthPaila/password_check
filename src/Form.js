@@ -43,22 +43,22 @@ const Form = () => {
   return (
     <div>
       <input type="text" placeholder="Enter password" onChange={clickHandler} />
-      <li style={{ visibility: !valid2 ? "hidden" : "visible" }}>
+      <li style={{ display: !valid2 ? "none" : "block" }}>
         password contains 8 characters
       </li>
-      <li style={{ visibility: !valid1 ? "hidden" : "visible" }}>
+      <li style={{ display: !valid1 ? "none" : "block" }}>
         password should contain atleast one uppercase letter
       </li>
-      <li style={{ visibility: !valid ? "hidden" : "visible" }}>
+      <li style={{ display: !valid ? "none" : "block" }}>
         password should contain atleast one lowercase letter
       </li>
-      <li style={{ visibility: !valid4 ? "hidden" : "visible" }}>
+      <li style={{ display: !valid4 ? "none" : "block" }}>
         password should contain atleast on number
       </li>
-      <li style={{ visibility: !valid3 ? "hidden" : "visible" }}>
+      <li style={{ display: !valid3 ? "none" : "block" }}>
         password should contain atleast one special character
       </li>
-      <li style={{ visibility: !valid3 ? "hidden" : "visible" }}>
+      <li style={{ display: !valid3 ? "none" : "block" }}>
         special characters like: !, @, #, $, %, ^, &, *
       </li>
     </div>
