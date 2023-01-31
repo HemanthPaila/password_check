@@ -15,9 +15,11 @@ const Form = () => {
     for (var i = 0; i < name.length; i++) {
       if (name.charCodeAt(i) >= 97 && name.charCodeAt(i) <= 122) {
         isValid(false);
-      } else if (name.charCodeAt(i) >= 65 && name.charCodeAt(i) <= 90) {
+      }
+      if (name.charCodeAt(i) >= 65 && name.charCodeAt(i) <= 90) {
         isValid1(false);
-      } else if (name.length >= 8) {
+      }
+      if (name.length >= 8) {
         isValid2(false);
       }
     }
